@@ -8,7 +8,7 @@ import os
 # For Streamlit Cloud: Add GROQ_API_KEY in your app secrets
 # For local: Add to .streamlit/secrets.toml or set as environment variable
 try:
-    api_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
+    api_key = st.secrets.get("GROQ_API_KEY", os.getenv("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", ""))
     if not api_key:
         st.error("⚠️ Please add your GROQ_API_KEY to Streamlit secrets or environment variables")
         st.stop()
