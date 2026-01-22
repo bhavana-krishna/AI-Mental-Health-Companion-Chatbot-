@@ -1,6 +1,5 @@
 ## 🌸 Featured Project: Mental Health Companion
 An AI-powered chatbot providing emotional support and wellness tools.
-[View Project →](https://streamlike-nonabstemiously-wendie.ngrok-free.dev/)
 
 **Tech Stack:** Python • Streamlit • Groq AI • Llama 3.3
 
