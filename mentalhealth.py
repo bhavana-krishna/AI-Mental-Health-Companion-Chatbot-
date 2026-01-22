@@ -8,7 +8,7 @@ import os
 # For Streamlit Cloud: Add GROQ_API_KEY in your app secrets
 # For local: Add to .streamlit/secrets.toml or set as environment variable
 try:
-    api_key = st.secrets.get("GROQ_API_KEY", os.getenv("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", ""))
+    api_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
     if not api_key:
         st.error("⚠️ Please add your GROQ_API_KEY to Streamlit secrets or environment variables")
         st.stop()
@@ -449,8 +449,3 @@ st.markdown("""
     <p style='font-size: 0.8rem;'>Remember: Taking care of your mental health is a sign of strength, not weakness.</p>
 </div>
 """, unsafe_allow_html=True)
-print("\n" + "="*60)
-print("✨ YOUR MENTAL HEALTH COMPANION IS READY! ✨")
-print("="*60)
-print(f"\n🔗 Click here to open: {public_url}\n")
-print("\n" + "="*60)
